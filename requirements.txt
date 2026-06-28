@@ -1,0 +1,11 @@
+# Python dependencies for portfolio website development
+
+# Web server for local development
+http-server>=0.12.3
+
+# Code formatting and linting
+black>=22.0.0
+flake8>=4.0.0
+
+# Utilities
+python-dotenv>=0.19.0

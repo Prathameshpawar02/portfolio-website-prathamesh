@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prathamesh Pawar - AI & Machine Learning Engineer | Portfolio showcasing AI/ML projects, skills in Python, Deep Learning, Data Science, and more.">
+    <meta name="keywords" content="Prathamesh Pawar, AI Engineer, ML Engineer, Machine Learning, Deep Learning, Data Science, Python, Portfolio">
+    <meta name="author" content="Prathamesh Pawar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Prathamesh Pawar | AI & Machine Learning Engineer">
+    <meta property="og:description" content="Passionate AI/ML Engineer focused on building intelligent solutions using Machine Learning, Deep Learning, Python, SQL, and Data Analytics.">
+    <meta property="og:type" content="website">
+    <title>Prathamesh Pawar | AI & Machine Learning Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation" id="bgAnimation">
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>prathamesh<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-robot"></i>
+                <span>AI & ML Engineer</span>
+            </div>
+            <h1 class="hero-name">
+                <span class="greeting">Hello, I'm</span>
+                <span class="name-highlight">Prathamesh Pawar</span>
+            </h1>
+            <div class="hero-title-wrapper">
+                <h2 class="hero-title">
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </h2>
+            </div>
+            <p class="hero-tagline">
+                Passionate AI/ML Engineer focused on building intelligent solutions using 
+                <span class="highlight">Machine Learning</span>, 
+                <span class="highlight">Deep Learning</span>, 
+                <span class="highlight">Python</span>, 
+                <span class="highlight">SQL</span>, and 
+                <span class="highlight">Data Analytics</span>.
+            </p>
+            <div class="hero-buttons">
+                <a href="resume.pdf" download class="btn btn-primary" id="downloadResume">
+                    <i class="fas fa-download"></i>
+                    <span>Download Resume</span>
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fas fa-code"></i>
+                    <span>View Projects</span>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact Me</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="9">0</span>
+                    <span class="stat-label">CGPA</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-image-wrapper">
+                <div class="orbit orbit-1"><div class="orbit-dot"></div></div>
+                <div class="orbit orbit-2"><div class="orbit-dot"></div></div>
+                <div class="orbit orbit-3"><div class="orbit-dot"></div></div>
+                <div class="ai-brain">
+                    <i class="fas fa-brain"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Profile Summary -->
+    <section class="profile-summary" id="profileSummary">
+        <div class="container">
+            <div class="summary-card glass-card">
+                <div class="summary-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <p class="summary-text">
+                    Aspiring <strong>AI/ML Engineer</strong> with a <strong>Bachelor of Computer Applications (BCA)</strong> degree and <strong>CGPA of 9.0/10</strong>. Strong foundation in Machine Learning, Python, SQL, Data Analysis, and Data Visualization. Experienced in building end-to-end machine learning projects including Customer Churn Prediction, Heart Disease Prediction, Customer Shopping Behavior Analysis, and AI Resume Analyzer. Passionate about developing intelligent systems, predictive models, and AI-driven solutions to solve real-world business problems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user"></i> Get To Know</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image-col">
+                    <div class="about-image-card glass-card">
+                        <div class="about-avatar">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="about-quick-info">
+                            <div class="info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>BCA Graduate</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Nandurbar, India</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-star"></i>
+                                <span>9.00 CGPA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text-col">
+                    <div class="about-text glass-card">
+                        <p>
+                            Hello, I'm <strong>Prathamesh Pawar</strong>, a recent BCA graduate with a 
+                            <strong>CGPA of 9.00</strong>. I specialize in <span class="highlight">Artificial Intelligence</span> 
+                            and <span class="highlight">Machine Learning</span> and have hands-on experience building 
+                            end-to-end machine learning projects.
+                        </p>
+                        <p>
+                            My expertise includes <strong>Python</strong>, <strong>Machine Learning</strong>, 
+                            <strong>Data Analysis</strong>, <strong>SQL</strong>, <strong>Power BI</strong>, and 
+                            <strong>Deep Learning</strong>. I am actively seeking opportunities as an 
+                            <span class="highlight">AI/ML Engineer</span>, <span class="highlight">Data Analyst</span>, 
+                            or <span class="highlight">Machine Learning Engineer</span>.
+                        </p>
+                        <div class="about-interests">
+                            <h3>Interests & Focus Areas</h3>
+                            <div class="interest-tags">
+                                <span class="interest-tag"><i class="fas fa-brain"></i> Artificial Intelligence</span>
+                                <span class="interest-tag"><i class="fas fa-chart-line"></i> Data Science</span>
+                                <span class="interest-tag"><i class="fas fa-robot"></i> Machine Learning</span>
+                                <span class="interest-tag"><i class="fas fa-network-wired"></i> Deep Learning</span>
+                                <span class="interest-tag"><i class="fas fa-magic"></i> Generative AI</span>
+                                <span class="interest-tag"><i class="fas fa-database"></i> Data Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Work History</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="experience-content">
+                <div class="timeline">
+                    <!-- Tata Motors -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <h3>Testing Associate</h3>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Nov 2021 – Jun 2022</span>
+                            </div>
+                            <h4 class="timeline-company"><i class="fas fa-building"></i> Tata Motors | Pune, India</h4>
+                            <ul class="experience-details">
+                                <li>Analyzed vehicle performance data and prepared testing reports.</li>
+                                <li>Identified faults and collaborated with engineering teams to improve quality.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Suzuki Motor Gujarat -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <h3>Production Associate</h3>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Feb 2020 – Jul 2020</span>
+                            </div>
+                            <h4 class="timeline-company"><i class="fas fa-building"></i> Suzuki Motor Gujarat | Gujarat, India</h4>
+                            <ul class="experience-details">
+                                <li>Maintained production records and quality documentation.</li>
+                                <li>Assisted in process monitoring and operational efficiency improvements.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-cogs"></i> What I Know</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Programming -->
+                <div class="skill-card glass-card" data-aos="fade-up">
+                    <div class="skill-card-header">
+                        <div class="skill-icon programming">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-terminal"></i>
+                                <span>C++</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="65"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card-header">
+                        <div class="skill-icon ml">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-cog"></i>
+                                <span>Scikit-Learn</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-rocket"></i>
+                                <span>XGBoost</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-sitemap"></i>
+                                <span>Classification</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Regression</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-check-double"></i>
+                                <span>Model Evaluation</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deep Learning -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card-header">
+                        <div class="skill-icon dl">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Deep Learning</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-fire"></i>
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Keras</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>Neural Networks</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analytics -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card-header">
+                        <div class="skill-icon analytics">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Data Analytics</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-table"></i>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-calculator"></i>
+                                <span>NumPy</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-chart-area"></i>
+                                <span>Matplotlib</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Power BI</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="78"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-file-excel"></i>
+                                <span>Excel</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card-header">
+                        <div class="skill-icon tools">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-book-open"></i>
+                                <span>Jupyter Notebook</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-code"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" data-width="82"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-code-branch"></i> My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="analytics">Data Analytics</button>
+                <button class="filter-btn" data-filter="ai">AI / NLP</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card" data-category="ml">
+                    <div class="project-image">
+                        <div class="project-icon-bg">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Prathameshpawar02/churn-predication-project-AI-ML" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://churn-predication-project-ai-ml.onrender.com" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> Mar 2026 – Apr 2026</span>
+                        </div>
+                        <h3>Customer Churn Prediction</h3>
+                        <p>Developed an end-to-end machine learning model to predict customer churn. Performed data preprocessing, feature encoding, and model evaluation. Built a deployment-ready prediction system using Flask. Improved customer retention decision-making through predictive analytics.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Data Preprocessing</span>
+                            <span><i class="fas fa-check"></i> Feature Encoding</span>
+                            <span><i class="fas fa-check"></i> Model Evaluation</span>
+                            <span><i class="fas fa-check"></i> Flask Deployment</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-Learn</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card" data-category="ml">
+                    <div class="project-image">
+                        <div class="project-icon-bg">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Prathameshpawar02/heart-disease-predication-project" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> May 2026 – Jun 2026</span>
+                        </div>
+                        <h3>Heart Disease Prediction</h3>
+                        <p>Built a classification model to predict heart disease risk from patient data. Applied feature engineering and compared multiple ML algorithms. Evaluated performance using Accuracy, Precision, Recall, and F1-Score.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Heart Risk Prediction</span>
+                            <span><i class="fas fa-check"></i> Feature Engineering</span>
+                            <span><i class="fas fa-check"></i> Model Comparison</span>
+                            <span><i class="fas fa-check"></i> Metric Evaluation</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Scikit-Learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card" data-category="analytics">
+                    <div class="project-image">
+                        <div class="project-icon-bg">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Prathameshpawar02" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">Data Analytics</span>
+                        </div>
+                        <h3>Customer Shopping Behaviour Analysis</h3>
+                        <p>Analyzed customer purchasing behavior using SQL, Python, Excel, and Power BI to uncover insights and improve business decision-making.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Data Cleaning</span>
+                            <span><i class="fas fa-check"></i> Customer Segmentation</span>
+                            <span><i class="fas fa-check"></i> Dashboard Creation</span>
+                            <span><i class="fas fa-check"></i> Business Insights</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card" data-category="ai">
+                    <div class="project-image">
+                        <div class="project-icon-bg">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Prathameshpawar02" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-tag">AI / NLP</span>
+                        </div>
+                        <h3>AI Resume Analyzer</h3>
+                        <p>Built an AI-powered resume analyzer that evaluates resumes, extracts skills, and provides recommendations for job readiness.</p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Resume Parsing</span>
+                            <span><i class="fas fa-check"></i> Skill Extraction</span>
+                            <span><i class="fas fa-check"></i> ATS Score Prediction</span>
+                            <span><i class="fas fa-check"></i> Career Recommendations</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> My Journey</span>
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="education-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <h3>Bachelor of Computer Applications (BCA)</h3>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Graduated: 2026</span>
+                            </div>
+                            <h4 class="timeline-company"><i class="fas fa-map-marker-alt"></i> Nandurbar | Maharashtra</h4>
+                            <div class="timeline-cgpa">
+                                <div class="cgpa-badge">
+                                    <span class="cgpa-number">9.0/10</span>
+                                    <span class="cgpa-label">CGPA</span>
+                                </div>
+                            </div>
+                            <div class="timeline-subjects">
+                                <h4>Relevant Subjects</h4>
+                                <div class="subjects-grid">
+                                    <span class="subject-tag"><i class="fas fa-brain"></i> Artificial Intelligence</span>
+                                    <span class="subject-tag"><i class="fas fa-robot"></i> Machine Learning</span>
+                                    <span class="subject-tag"><i class="fas fa-project-diagram"></i> Data Structures</span>
+                                    <span class="subject-tag"><i class="fas fa-database"></i> Database Management Systems</span>
+                                    <span class="subject-tag"><i class="fas fa-chart-bar"></i> Data Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section achievements" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-trophy"></i> Recognition</span>
+                <h2 class="section-title">Achievements</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>9.00 CGPA</h3>
+                    <p>BCA Graduate with outstanding academic performance</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>4 AI/ML Projects</h3>
+                    <p>Developed end-to-end AI and Machine Learning projects</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Strong ML Foundation</h3>
+                    <p>Strong foundation in Machine Learning and Data Analytics</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>AI Research & Innovation</h3>
+                    <p>Passionate about AI Research and Innovation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-certificate"></i> Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card glass-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Python Programming</h3>
+                        <p class="cert-issuer">KodeKloud</p>
+                        <span class="cert-date">Issued: 2025</span>
+                    </div>
+                </div>
+                <div class="certification-card glass-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Power BI Visualization</h3>
+                        <p class="cert-issuer">UniAthena UK</p>
+                        <span class="cert-date">Issued: 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm actively looking for opportunities in AI/ML Engineering, Data Science, and Data Analytics. Feel free to reach out!</p>
+                    <div class="contact-items">
+                        <div class="contact-item glass-card">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:prathmeshpawar123456u@gmail.com">prathmeshpawar123456u@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item glass-card">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+919325117418">+91 93251 17418</a>
+                            </div>
+                        </div>
+                        <div class="contact-item glass-card">
+                            <div class="contact-item-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/Prathamesh-pawar-GP0230" target="_blank">linkedin.com/in/Prathamesh-pawar-GP0230</a>
+                            </div>
+                        </div>
+                        <div class="contact-item glass-card">
+                            <div class="contact-item-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <span class="contact-label">GitHub</span>
+                                <a href="https://github.com/Prathameshpawar02" target="_blank">github.com/Prathameshpawar02</a>
+                            </div>
+                        </div>
+                        <div class="contact-item glass-card">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <span class="contact-label">Location</span>
+                                <span>Nandurbar, Maharashtra, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form glass-card" id="contactForm">
+                        <h3>Send Me a Message</h3>
+                        <div class="form-group">
+                            <label for="contactName">Your Name</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="contactName" name="name" placeholder="Enter your name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Your Email</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="contactEmail" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message</label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment-dots"></i>
+                                <textarea id="contactMessage" name="message" placeholder="Write your message..." rows="5" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="sendMessageBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>PP<span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>AI & Machine Learning Engineer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Prathameshpawar02" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/Prathamesh-pawar-GP0230" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:prathmeshpawar123456u@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Prathamesh Pawar | AI & Machine Learning Engineer</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
